@@ -1,10 +1,185 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-    <title>Hello GitHub Pages</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>黃翊逢｜自我介紹</title>
+  <meta name="description" content="元智大學資工系大三學生黃翊逢，自我介紹：遊戲設計、競程、LeetCode、Side Project、C/C++、Python、Verilog、RISC-V。" />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121a33;
+      --text:#e7ecff;
+      --muted:#aab3d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#7c9cff;
+      --accent2:#71f0c1;
+      --radius:18px;
+      --shadow:0 18px 50px rgba(0,0,0,.35);
+      --max:960px;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans TC",
+              "PingFang TC","Microsoft JhengHei", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); line-height:1.75;
+      background:
+        radial-gradient(1100px 600px at 15% 10%, rgba(124,156,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 12%, rgba(113,240,193,.18), transparent 55%),
+        radial-gradient(800px 500px at 50% 90%, rgba(255,255,255,.08), transparent 60%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
+    .card{
+      background:rgba(18,26,51,.72);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    header{
+      padding:22px 22px 18px;
+      border-bottom:1px solid var(--line);
+      display:flex; gap:16px; align-items:center; flex-wrap:wrap;
+    }
+    .avatar{
+      width:72px; height:72px; border-radius:18px;
+      background: linear-gradient(135deg, rgba(124,156,255,.9), rgba(113,240,193,.85));
+      display:grid; place-items:center; color:#0b1020;
+      font-weight:800; font-size:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      flex:0 0 auto;
+    }
+    .title h1{margin:0; font-size:28px; line-height:1.15}
+    .title p{margin:6px 0 0; color:var(--muted)}
+    .pills{margin-top:10px; display:flex; gap:8px; flex-wrap:wrap}
+    .pill{
+      font-size:13px; color:var(--muted);
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:6px 10px; border-radius:999px;
+    }
+    main{padding:18px 22px 24px}
+    section{padding:14px 0; border-bottom:1px solid var(--line)}
+    section:last-child{border-bottom:none}
+    h2{margin:0 0 10px; font-size:16px; letter-spacing:.2px}
+    p{margin:0}
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0; color:rgba(231,236,255,.95)}
+    .two-col{
+      display:grid; grid-template-columns:1fr 1fr; gap:16px;
+    }
+    @media (max-width: 760px){ .two-col{grid-template-columns:1fr} }
+    .contact{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn.primary{
+      border-color:transparent;
+      background: linear-gradient(135deg, rgba(124,156,255,.95), rgba(113,240,193,.85));
+      color:#0b1020;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    footer{color:var(--muted); font-size:12px; margin-top:14px; text-align:center}
+    .small{color:var(--muted); font-size:13px}
+  </style>
 </head>
+
 <body>
-    <h1>這是我的 GitHub Pages 首頁！</h1>
-    <h1>學號:1123301</h1>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar">YF</div>
+
+        <div class="title">
+          <h1>黃翊逢</h1>
+          <p>元智大學 資工系｜大三｜遊戲設計 × 競技程式</p>
+          <div class="pills">
+            <span class="pill">#遊戲設計</span>
+            <span class="pill">#競程</span>
+            <span class="pill">#LeetCode</span>
+            <span class="pill">#Side Project</span>
+            <span class="pill">#C/C++</span>
+            <span class="pill">#Verilog</span>
+            <span class="pill">#RISC-V</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>自我介紹</h2>
+          <p>
+            我是黃翊逢，目前就讀元智大學資訊工程學系大三。
+            我喜歡設計遊戲，同時也對競技程式有一些興趣。
+            除了課程專題以外，我也會利用課外時間提升實作能力，
+            例如刷 LeetCode、以及製作額外的 side project（像是小遊戲）來累積經驗與作品。
+          </p>
+        </section>
+
+        <section id="strengths">
+          <h2>我的特質與優勢</h2>
+          <ul>
+            <li><b>注重理論：</b>我希望自己使用的技術能真正理解原理，而不是停留在「似懂非懂」。</li>
+            <li><b>重視溝通：</b>在團隊合作時，我會主動同步進度、釐清需求與分工，讓大家能在同一個目標上前進。</li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>技能與工具</h2>
+
+          <div class="two-col">
+            <div>
+              <p class="small">程式語言</p>
+              <ul>
+                <li><b>主要擅長：</b>C / C++（競程與實作練習）</li>
+                <li><b>熟悉：</b>Python（基礎使用與腳本／快速原型）</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="small">硬體 / 底層相關</p>
+              <ul>
+                <li><b>HDL：</b>Verilog</li>
+                <li><b>ISA / 架構：</b>RISC-V（有相關學習與實作經驗）</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="goal">
+          <h2>目前目標</h2>
+          <p>
+            我希望在持續提升演算法能力的同時，也把遊戲設計的想法做成可以展示的作品，
+            逐步累積作品集與實作經驗，並朝軟體／遊戲相關實習或競賽方向努力。
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>聯絡方式</h2>
+          <p class="small">歡迎透過以下方式聯絡我：</p>
+          <div class="contact">
+            <a class="btn primary" href="mailto:s1123301@mail.yzu.edu.tw">s1123301@mail.yzu.edu.tw</a>
+            <a class="btn" href="https://github.com/blup712019" target="_blank" rel="noreferrer">GitHub：blup712019</a>
+          </div>
+        </section>
+
+        <footer>
+          © <span id="year"></span> 黃翊逢｜Last updated: 2026-01-06
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

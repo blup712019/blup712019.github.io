@@ -133,12 +133,6 @@
     .project-result{font-size:11px;color:var(--muted)}
     .inline-link{font-size:12px;font-weight:850;color:var(--accent)}
     .inline-link:hover{text-decoration:underline;text-underline-offset:4px}
-    .future-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .future-card{padding:27px 29px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(140deg,var(--surface-2),var(--surface))}
-    .future-card .num{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.12em}
-    .future-card h3{font-size:18px;line-height:1.6;margin:11px 0 11px}
-    .future-card p{font-size:12px;line-height:1.95;color:var(--subtext);margin:0}
-    .future-note{font-size:12px;color:var(--muted);margin:17px 0 0}
     .achievements-layout{display:grid;grid-template-columns:1.18fr .82fr;gap:18px}
     .achievement-panel{padding:26px 30px}
     .timeline{list-style:none;margin:0;padding:0}
@@ -184,14 +178,14 @@
       .float-note{right:8px;bottom:-18px}
       .stat-grid{grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:82px}
       section.block{padding-bottom:82px}
-      .about-grid,.research-card,.projects-grid,.future-grid,.achievements-layout{grid-template-columns:1fr}
+      .about-grid,.research-card,.projects-grid,.achievements-layout{grid-template-columns:1fr}
       .research-visual{min-height:260px}
       .section-heading{display:block}.section-heading .aside{margin:11px 0 0}
       .contact-card{padding:33px 27px;display:block}.contact-buttons{margin-top:23px;justify-content:flex-start}
     }
     @media(max-width:420px){
       .stat{padding:17px 15px}.stat b{font-size:22px}
-      .panel,.research-content,.future-card{padding:24px 22px}
+      .panel,.research-content{padding:24px 22px}
       .project-body{padding:22px 20px}
       .research-visual{padding:13px;min-height:230px}
       .hero-buttons .button{width:100%}
@@ -207,7 +201,7 @@
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="返回黃翊逢個人作品集首頁"><span class="brand-mark">YF</span><span>黃翊逢 <span class="muted">/ Portfolio</span></span></a>
       <nav class="nav" aria-label="主選單">
-        <a href="#about">關於我</a><a href="#research">研究</a><a href="#projects">專案作品</a><a href="#future">研究方向</a><a href="#achievements">經歷</a><a href="#skills">技能</a><a href="#contact">聯絡</a>
+        <a href="#about">關於我</a><a href="#research">研究</a><a href="#projects">專案作品</a><a href="#achievements">經歷</a><a href="#skills">技能</a><a href="#contact">聯絡</a>
       </nav>
       <div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="切換明暗模式" aria-pressed="false" title="切換明暗模式">☀</button></div>
     </div>
@@ -323,18 +317,8 @@
         </article>
       </div>
     </section>
-
-    <section id="future" class="block container" aria-labelledby="future-title">
-      <div class="section-heading"><div><div class="eyebrow">04 / Research Interests</div><h2 id="future-title">未來研究方向</h2></div><p class="aside">延續目前的 VR 空中傳送專題，從選點與預覽深入到空間判讀與自適應視覺呈現。</p></div>
-      <div class="future-grid">
-        <article class="future-card"><div class="num">DIRECTION 01 · 研究規劃</div><h3>局部遮蔽與雜物處理策略對 VR 目的地理解的影響</h3><p>規劃比較三種局部開口方式與兩種雜物處理策略，觀察使用者判斷目的地樓層、房間及房間內位置的正確率、時間與資訊判讀負荷，釐清「目標可見」與「空間關係易懂」之間的設計取捨。</p></article>
-        <article class="future-card"><div class="num">DIRECTION 02 · 研究構想</div><h3>以使用者空間判讀資料驅動自適應遮蔽處理</h3><p>期望利用場景、遮擋條件與遮蔽參數預測使用者的空間判讀表現，將效果預測模型作為配置最佳化的依據，探索能隨場景條件調整的視覺呈現方式。</p></article>
-      </div>
-      <p class="future-note">以上為後續研究計畫與探索方向，非已完成的實驗成果。</p>
-    </section>
-
     <section id="achievements" class="block container" aria-labelledby="achievements-title">
-      <div class="section-heading"><div><div class="eyebrow">05 / Experience &amp; Recognition</div><h2 id="achievements-title">經歷與成果</h2></div><p class="aside">從競程訓練、團隊競賽到研究與教學，持續累積解題能力與溝通經驗。</p></div>
+      <div class="section-heading"><div><div class="eyebrow">04 / Experience &amp; Recognition</div><h2 id="achievements-title">經歷與成果</h2></div><p class="aside">從競程訓練、團隊競賽到研究與教學，持續累積解題能力與溝通經驗。</p></div>
       <div class="achievements-layout">
         <div class="panel achievement-panel"><ol class="timeline">
           <li><span class="timeline-year">2026</span><div class="timeline-body"><b>國科會大專學生研究計畫・核定通過</b><p>VR 空中傳送與可視化幾何參照研究，指導教授蔡侑庭教授。</p></div></li>
@@ -355,17 +339,17 @@
     </section>
 
     <section id="skills" class="block container" aria-labelledby="skills-title">
-      <div class="section-heading"><div><div class="eyebrow">06 / Skills &amp; Tools</div><h2 id="skills-title">技能與技術工具</h2></div><p class="aside">涵蓋程式設計、VR 實作、系統與演算法、AI 影像處理；依實際課程與專案經驗整理。</p></div>
+      <div class="section-heading"><div><div class="eyebrow">05 / Skills &amp; Tools</div><h2 id="skills-title">技能與技術工具</h2></div><p class="aside">涵蓋程式設計、VR 實作、系統與演算法、AI 影像處理；依實際課程與專案經驗整理。</p></div>
       <div class="skills-grid">
-        <div class="skill-card"><div class="skill-icon" aria-hidden="true">{ }</div><h3>程式語言</h3><div class="tags"><span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">C#</span><span class="tag">Verilog</span></div></div>
+        <div class="skill-card"><div class="skill-icon" aria-hidden="true">{ }</div><h3>程式語言</h3><div class="tags"><span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">C#</span><span class="tag">Verilog</span><span class="tag">RISC-V</span></div></div>
         <div class="skill-card"><div class="skill-icon" aria-hidden="true">◈</div><h3>VR / 互動系統</h3><div class="tags"><span class="tag">Unity</span><span class="tag">OpenXR</span><span class="tag">HLSL Shader</span><span class="tag">3D Geometry</span><span class="tag">HCI</span></div></div>
-        <div class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>系統與演算法</h3><div class="tags"><span class="tag">Algorithms</span><span class="tag">AIG / SAT</span><span class="tag">EDA Tools</span><span class="tag">RISC-V</span><span class="tag">Pthreads / IPC</span></div></div>
+        <div class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>系統與演算法</h3><div class="tags"><span class="tag">Algorithms</span><span class="tag">AIG / SAT</span><span class="tag">EDA Tools</span><span class="tag">Pthreads / IPC</span></div></div>
         <div class="skill-card"><div class="skill-icon" aria-hidden="true">✳</div><h3>AI / 影像處理</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">Restormer</span><span class="tag">Computer Vision</span><span class="tag">Data Preprocessing</span><span class="tag">Speech AI</span></div></div>
       </div>
     </section>
 
     <section id="contact" class="block container" aria-labelledby="contact-title">
-      <div class="contact-card"><div><div class="eyebrow">07 / Contact</div><h2 id="contact-title">歡迎交流研究與技術想法。</h2><p>如果你對 VR、HCI、演算法或系統開發有興趣，歡迎與我聯絡。</p></div><div class="contact-buttons"><a class="button button-primary" href="mailto:s1123301@mail.yzu.edu.tw">Email <span aria-hidden="true">↗</span></a><a class="button" href="https://github.com/blup712019" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+      <div class="contact-card"><div><div class="eyebrow">06 / Contact</div><h2 id="contact-title">歡迎交流研究與技術想法。</h2><p>如果你對 VR、HCI、演算法或系統開發有興趣，歡迎與我聯絡。</p></div><div class="contact-buttons"><a class="button button-primary" href="mailto:s1123301@mail.yzu.edu.tw">Email <span aria-hidden="true">↗</span></a><a class="button" href="https://github.com/blup712019" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
   <footer><div class="container footer-inner"><span>© <span id="year">2026</span> 黃翊逢 · Built for GitHub Pages</span><span>最後更新：2026-10-12　·　<a class="back-to-top" href="#top">回到頂端 ↑</a></span></div></footer>
